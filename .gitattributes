@@ -1,0 +1,6 @@
+.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+mobilegame/data/train/playlog01-130520.csv filter=lfs diff=lfs merge=lfs -text
+mobilegame/data/train/playlog01-130520.csv filter=lfs diff=lfs merge=lfs -text
+*.tar.zip filter=lfs diff=lfs merge=lfs -text
+mobilegame/data/train/playlog01-130520.csv filter=lfs diff=lfs merge=lfs -text

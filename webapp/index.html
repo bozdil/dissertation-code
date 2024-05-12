@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Churn Prediction Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <div class="form-control w-full max-w-2xl mx-auto">
+        <form id="churnForm" class="card bg-white p-6 flex flex-col space-y-4">
+          <h1 class="text-xl font-bold text-center">Churn Prediction Form</h1>
+          <!-- Form fields with labels -->
+          <div class="flex flex-wrap -mx-2">
+            <!-- Each field as a separate block for clarity -->
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="Country" class="label">
+                <span class="label-text">Country</span>
+              </label>
+              <input
+                type="text"
+                name="Country"
+                id="Country"
+                placeholder="USA"
+                value="USA"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="State" class="label">
+                <span class="label-text">State</span>
+              </label>
+              <input
+                type="text"
+                name="State"
+                id="State"
+                placeholder="California"
+                value="California"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="City" class="label">
+                <span class="label-text">City</span>
+              </label>
+              <input
+                type="text"
+                name="City"
+                id="City"
+                placeholder="Los Angeles"
+                value="Los Angeles"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="ZipCode" class="label">
+                <span class="label-text">Zip Code</span>
+              </label>
+              <input
+                type="text"
+                name="ZipCode"
+                id="ZipCode"
+                placeholder="90001"
+                value="90001"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="Gender" class="label">
+                <span class="label-text">Gender</span>
+              </label>
+              <input
+                type="text"
+                name="Gender"
+                id="Gender"
+                placeholder="1.0"
+                value="1.0"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="SeniorCitizen" class="label">
+                <span class="label-text">Senior Citizen</span>
+              </label>
+              <input
+                type="text"
+                name="SeniorCitizen"
+                id="SeniorCitizen"
+                placeholder="0.0"
+                value="0.0"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="Partner" class="label">
+                <span class="label-text">Partner</span>
+              </label>
+              <input
+                type="text"
+                name="Partner"
+                id="Partner"
+                placeholder="1.0"
+                value="1.0"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="Dependents" class="label">
+                <span class="label-text">Dependents</span>
+              </label>
+              <input
+                type="text"
+                name="Dependents"
+                id="Dependents"
+                placeholder="0.0"
+                value="0.0"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="TenureMonths" class="label">
+                <span class="label-text">Tenure Months</span>
+              </label>
+              <input
+                type="text"
+                name="TenureMonths"
+                id="TenureMonths"
+                placeholder="32"
+                value="32"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="PhoneService" class="label">
+                <span class="label-text">Phone Service</span>
+              </label>
+              <input
+                type="text"
+                name="PhoneService"
+                id="PhoneService"
+                placeholder="1.0"
+                value="1.0"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="MultipleLines" class="label">
+                <span class="label-text">Multiple Lines</span>
+              </label>
+              <input
+                type="text"
+                name="MultipleLines"
+                id="MultipleLines"
+                placeholder="No"
+                value="No"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="InternetService" class="label">
+                <span class="label-text">Internet Service</span>
+              </label>
+              <input
+                type="text"
+                name="InternetService"
+                id="InternetService"
+                placeholder="Fiber Optic"
+                value="Fiber Optic"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="OnlineSecurity" class="label">
+                <span class="label-text">Online Security</span>
+              </label>
+              <input
+                type="text"
+                name="OnlineSecurity"
+                id="OnlineSecurity"
+                placeholder="Yes"
+                value="Yes"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="OnlineBackup" class="label">
+                <span class="label-text">Online Backup</span>
+              </label>
+              <input
+                type="text"
+                name="OnlineBackup"
+                id="OnlineBackup"
+                placeholder="No"
+                value="No"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="DeviceProtection" class="label">
+                <span class="label-text">Device Protection</span>
+              </label>
+              <input
+                type="text"
+                name="DeviceProtection"
+                id="DeviceProtection"
+                placeholder="Yes"
+                value="Yes"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="TechSupport" class="label">
+                <span class="label-text">Tech Support</span>
+              </label>
+              <input
+                type="text"
+                name="TechSupport"
+                id="TechSupport"
+                placeholder="No"
+                value="No"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="StreamingTV" class="label">
+                <span class="label-text">Streaming TV</span>
+              </label>
+              <input
+                type="text"
+                name="StreamingTV"
+                id="StreamingTV"
+                placeholder="Yes"
+                value="Yes"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="StreamingMovies" class="label">
+                <span class="label-text">Streaming Movies</span>
+              </label>
+              <input
+                type="text"
+                name="StreamingMovies"
+                id="StreamingMovies"
+                placeholder="No"
+                value="No"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="Contract" class="label">
+                <span class="label-text">Contract</span>
+              </label>
+              <input
+                type="text"
+                name="Contract"
+                id="Contract"
+                placeholder="One Year"
+                value="One Year"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="PaperlessBilling" class="label">
+                <span class="label-text">Paperless Billing</span>
+              </label>
+              <input
+                type="text"
+                name="PaperlessBilling"
+                id="PaperlessBilling"
+                placeholder="1.0"
+                value="1.0"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="PaymentMethod" class="label">
+                <span class="label-text">Payment Method</span>
+              </label>
+              <input
+                type="text"
+                name="PaymentMethod"
+                id="PaymentMethod"
+                placeholder="Credit Card"
+                value="Credit Card"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="MonthlyCharges" class="label">
+                <span class="label-text">Monthly Charges</span>
+              </label>
+              <input
+                type="text"
+                name="MonthlyCharges"
+                id="MonthlyCharges"
+                placeholder="85.50"
+                value="85.50"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="TotalCharges" class="label">
+                <span class="label-text">Total Charges</span>
+              </label>
+              <input
+                type="text"
+                name="TotalCharges"
+                id="TotalCharges"
+                placeholder="2567.8"
+                value="2567.8"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2">
+              <label for="CLTV" class="label">
+                <span class="label-text">Customer Lifetime Value(CLTV)</span>
+              </label>
+              <input
+                type="text"
+                name="CLTV"
+                id="CLTV"
+                placeholder="5000"
+                value="5000"
+                class="input input-bordered"
+              />
+            </div>
+            <div class="px-2 w-full sm:w-1/2 invisible">
+              <label for="ChurnScore" class="label">
+                <span class="label-text">Churn Score</span>
+              </label>
+              <input
+                type="text"
+                name="ChurnScore"
+                id="ChurnScore"
+                placeholder="65"
+                value="65"
+                class="input input-bordered"
+              />
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary mt-4">
+            Predict Churn
+          </button>
+        </form>
+      </div>
+      <h2
+        id="result"
+        class="text-xl font-semibold text-gray-700 mt-6 text-center"
+      >
+        Submit to see the prediction
+      </h2>
+    </div>
+
+    <script>
+      document.getElementById("churnForm").onsubmit = function (event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const queryParams = new URLSearchParams(formData).toString();
+        fetch(
+          `https://h7v6vxuga1.execute-api.us-east-1.amazonaws.com/test/predict-churn?${queryParams}`,
+          {
+            method: "GET"
+          }
+        )
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            if (!data || !data.probabilities) {
+              throw new Error("Invalid data returned from the server");
+            }
+            const probabilities = data.probabilities[0];
+            console.log("Response: ", probabilities)
+            const churnProbability = probabilities[0];
+            const resultElement = document.getElementById("result");
+            if (churnProbability > 0.5) {
+              resultElement.textContent = "User will Churn";
+              resultElement.className = "alert alert-error mt-4 font-bold";
+            } else {
+              resultElement.textContent = "User will NOT Churn";
+              resultElement.className = "alert alert-success mt-4 font-bold ";
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching data: ", error);
+            document.getElementById("result").textContent =
+              "Error in prediction: " + error.message;
+            document.getElementById("result").className = "text-red-500";
+          });
+      };
+    </script>
+  </body>
+</html>
